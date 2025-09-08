@@ -7,7 +7,7 @@ import {
   ChevronRight, 
   Clock, 
   Download, 
-  Print,
+  Printer,
   FileText,
   Users,
   Map,
