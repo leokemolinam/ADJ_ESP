@@ -28,23 +28,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'yarn'
-          cache-dependency-path: frontend/yarn.lock
 
       - name: Install dependencies (yarn)
         working-directory: frontend
-        run: |
-          if [ -f yarn.lock ]; then
-            yarn install --frozen-lockfile
-          else
-            yarn install
-          fi
+        run: yarn install --frozen-lockfile || yarn install
 
       - name: Build (CRACO)
         working-directory: frontend
         run: yarn build
 
-      # SPA fallback (evita 404 en rutas de React Router)
       - name: SPA 404 fallback
         run: cp frontend/build/index.html frontend/build/404.html
 
