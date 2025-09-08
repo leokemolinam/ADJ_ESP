@@ -101,3 +101,99 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Testing completo de la aplicación del timeline interactivo del proceso de adjudicación ANT. Probar todas las funcionalidades principales: carga inicial, interactividad del timeline, panel de detalles, funcionalidades de exportar/imprimir, diseño responsive y usabilidad general."
+
+frontend:
+  - task: "Carga inicial de la página"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/TimelineProcess.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Necesita verificar que se muestre el header con título, botones de Exportar/Imprimir y los 5 macroprocesos en el timeline"
+
+  - task: "Interactividad del timeline"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/TimelineProcess.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Necesita probar clic en cada macroproceso para expandir/contraer, verificar animaciones y línea conectora verde-amarillo"
+
+  - task: "Panel de detalles de actividades"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/TimelineProcess.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Necesita probar clic en actividades para ver detalles: descripción, responsable, tipo, estado, documentos e iconos"
+
+  - task: "Funcionalidades de exportar e imprimir"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/TimelineProcess.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Necesita probar botón Exportar para descargar JSON y botón Imprimir"
+
+  - task: "Diseño responsive"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/TimelineProcess.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Necesita verificar que se vea bien en diferentes tamaños de pantalla y colores ANT (verde, blanco, amarillo)"
+
+  - task: "Usabilidad general"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/TimelineProcess.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Necesita verificar elementos interactivos, ausencia de errores en consola y navegación intuitiva"
+
+metadata:
+  created_by: "testing_agent"
+  version: "1.0"
+  test_sequence: 1
+
+test_plan:
+  current_focus:
+    - "Carga inicial de la página"
+    - "Interactividad del timeline"
+    - "Panel de detalles de actividades"
+    - "Funcionalidades de exportar e imprimir"
+    - "Diseño responsive"
+    - "Usabilidad general"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+
+agent_communication:
+    - agent: "testing"
+    - message: "Iniciando testing completo de la aplicación ANT timeline. Se han identificado 6 áreas principales para probar según los requerimientos del usuario."
