@@ -88,8 +88,12 @@ const TimelineProcess = () => {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-green-700 rounded-lg flex items-center justify-center">
-                <Scale className="w-6 h-6 text-white" />
+              <div className="w-16 h-16 flex items-center justify-center">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_adjudica-tierras/artifacts/deeb36q7_images.png" 
+                  alt="Logo ANT - Agencia Nacional de Tierras"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
