@@ -114,7 +114,7 @@ const TimelineProcess = () => {
                 variant="outline" 
                 className="flex items-center gap-2 border-green-200 hover:bg-green-50"
               >
-                <Print className="w-4 h-4" />
+                <Printer className="w-4 h-4" />
                 Imprimir
               </Button>
             </div>
